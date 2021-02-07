@@ -28,6 +28,7 @@ Check out postman collection.
 
 ## Test 
 Included few automated test cases in test/test.js using mocha and chai
+
 Please run npm run build first to generate dist folder
 
 ```
