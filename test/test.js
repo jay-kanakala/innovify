@@ -28,5 +28,24 @@ describe('Books', () => {
             });
         });
     });
+    
+        /*
+    * Test the /get route to get all users
+    */
+   describe('/user', () => {
+        it('it should fetch all users', (done) => {
+        chai.request(server)
+            .get('/user')
+            .end((err, res) => {
+                res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    res.body.should.have.property('message').eql('Users found');         
+                    res.body.should.have.property('user');
+                done();
+            });
+        });
+    });
+
+    //likewise we can add a lot of test cases
 
 });
