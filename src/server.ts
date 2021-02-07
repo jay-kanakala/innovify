@@ -38,6 +38,8 @@ app.route("/user/:id")
 app.listen(port);
 console.log("Listening on port " + port);
 
+module.exports = app; // for testing using npm run test
+
 //In case we have any uncaught exceptions or unhandled promises, we can do something about it like below
 process.on("uncaughtException", e => {
     console.log("uncaughtException", e);
