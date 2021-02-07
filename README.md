@@ -27,7 +27,16 @@ I created a free redis cloud account. included it here so you can do fast testin
 Check out postman collection.
 
 ## Test 
-Included few automated test cases in test/test.js using mocha and chai. run them by using the command 
+Included few automated test cases in test/test.js using mocha and chai
+Please run npm run build first to generate dist folder
+
+```
+npm run build
+```
+This generates dist folder which will contain server.js which will be used to run test cases 
+
+Now run below command to run test cases
+
 ```
 npm run test
 ```
