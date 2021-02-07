@@ -1,0 +1,11 @@
+{
+    "app": {
+        "port": 3000
+    },  
+    "redisOptions" : {
+        "host": "redis-11254.c212.ap-south-1-1.ec2.cloud.redislabs.com",
+        "port": 11254,
+        "password": "793tb2p9ZOPKuFzCLpmmYoI5q1NUT3qP"
+
+    }
+}
